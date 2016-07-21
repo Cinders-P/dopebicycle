@@ -1,0 +1,52 @@
+body
+	display: flex
+	align-items: center
+	justify-content: center
+	width: 100vw
+	height: 100vh
+	margin: 0
+	background: linear-gradient(to bottom, rgba(231,249,229,1) 0%,rgba(201,242,227,1) 15%,rgba(180,237,215,1) 30%,rgba(102,157,201,1) 100%)
+
+svg
+	transform: translate(-5%, -10%)
+	margin: 20px
+
+svg circle
+	cursor: pointer
+	fill: none
+	stroke: black
+	stroke-width: 2px
+	fill-opacity: 0.5
+	z-index: 10
+	position: relative
+	&:hover
+		fill: @stroke
+	&.dope
+		stroke: blue
+		&:hover
+			fill: @stroke
+
+#info h1
+	font-size: 1.5rem
+	position: absolute
+	top: 27%
+	width: 250px
+	transform translateX(30%)
+	white-space: normal
+
+h1
+	font-size: 2.5rem
+	font-family: sans-serif
+	opacity: 0.7
+	text-shadow 0 0 7px rgba(0,0,0,0.5)
+	white-space: nowrap
+	& span
+		font-size: 2rem
+#title
+	position: absolute
+	transform translateX(35%)
+
+.label
+	fill: black
+	font-size: 10px
+	font-family: sans-serif
